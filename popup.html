@@ -6,7 +6,8 @@
  -->
 <html>
   <head>
-    <title>Getting Started Extension's Popup</title>
+    <title>Find the right email</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <style>
       body {
         font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
@@ -30,8 +31,27 @@
     <script src="popup.js"></script>
   </head>
   <body>
-    <div id="status"></div>
-    <img id="image-result" hidden>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="first_name">First name</label>
+            <input type="text" id="first_name">
+          </div>
+          <div class="form-group">
+            <label for="last_name">Last name</label>
+            <input type="text" id="last_name">
+          </div>
+          <div class="form-group">
+            <label for="domain">Domain</label>
+            <input type="text" id="domain" placeholder="gmail.com">
+          </div>
+          <a class="btn btn-default" id="go">Go!</a>
+          <a class="btn btn-default" id="test">Test!</a>
+          <div id="correct_emails" class="hidden"></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 
